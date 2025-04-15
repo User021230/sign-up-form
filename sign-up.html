@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+
+    <div class="main-container">
+        <div clsss="image-container">
+            <img class="logo-background-image" src="assets/halie-west-eOBSy2sCnHw-unsplash.jpg">
+            
+           <div class="image-body">
+            <div class="logo-container">
+                <img src="assets/odin-lined.png" alt="odin">
+                <h3>ODIN</h3>
+                
+            </div>
+            
+            <p>photo by <a href="#">haile west</a> on <a href="https://unsplash.com/@haliewestphoto">Unsplash</a></p>
+           </div>
+            
+        </div>
+
+        <div class="sign-up-container">
+            <div class="sign-up-welcome">
+                <h3>Welcome to my odin sign up form design :). positioning, selectors, variables, custom properties etc.</h3>
+                <h3>lorem ipsum!</h3>
+            </div>
+            <form class="sign-up" method="post" required>
+                <input type="text" name="userName" required>
+                <input type ="text" name="userSurname" required>
+                <input type="email" name="userEmail" required>
+                <input type="text" minlength="10" maxlength="10" required>
+                <input id="psw1" type="password" minlength="8" required>
+                <input id="psw2" type="password" minlength="8" required>  
+            </form>
+
+            <div> Already have an account? <a href="#">login</a></div>
+        </div>
+    </div>
+
+    <script src="scripts/sign_up.js"></script>
 </body>
 </html>
