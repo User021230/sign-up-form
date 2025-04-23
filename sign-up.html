@@ -22,19 +22,31 @@
 
         <div class="right-container">
             <div class="sign-up-welcome">
-                <h3>Welcome to my odin sign up form design :). positioning, selectors, variables, custom properties etc.</h3>
-                <h3>lorem ipsum!</h3>
+                <h2>Welcome to my odin sign up form design :). positioning, selectors, variables, custom properties etc.</h2>
+                <h2>lorem ipsum!</h2>
             </div>
+
             <form class="sign-up" method="post" required>
-                <input type="text" name="userName" required>
-                <input type ="text" name="userSurname" required>
-                <input type="email" name="userEmail" required>
-                <input type="text" minlength="10" maxlength="10" required>
-                <input id="psw1" type="password" minlength="8" required>
-                <input id="psw2" type="password" minlength="8" required>  
+                <h3>Sign Up</h3>
+                <div class="name-block">
+                    <input type="text" name="userName" minlength="2" placeholder="Name" pla required>
+                    <input type ="text" name="userSurname" placeholder="Surname" required>
+                </div>
+
+               <div class="contact-block">
+                <input type="email" name="userEmail" placeholder="Email Address" required>
+                <input type="text" minlength="10" maxlength="10" placeholder="Enter Phone Number" required>
+               </div>
+
+                <div class="psw-block">
+                    <input id="psw1" type="password" minlength="8" placeholder="Enter password" required>
+                <input id="psw2" type="password" minlength="8" placeholder="Re-enter password" required> 
+                </div> 
+
+                <button>Create Account</button>
             </form>
 
-            <div> Already have an account? <a href="#">login</a></div>
+            <div class="login"> Already have an account? <a href="#">login</a></div>
         </div>
     </div>
 </body>
