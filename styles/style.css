@@ -17,9 +17,11 @@ body{
 }
 .image-body{
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
     top: 20px;
-    width: max-content;
+    width: 100%;
     text-align: center;
+    top:25%;
 }
 
 .logo-background-image{
@@ -28,11 +30,17 @@ body{
     height:100vh;
 }
 .logo-container {
-    position: absolute;
+    position: relative;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
+    width:100%;
+    top:40%;
+    left: 40%;
     /* bottom:30%; */
+}
+
+.logo-container > h3 {
+    font-size: 4rem;
 }
 
 .logo-image {
